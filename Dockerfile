@@ -1,9 +1,8 @@
 FROM alpine:latest
 
-ENV REFRESHED_AT 2017-05-21
+ENV REFRESHED_AT 2020-01-30
 
-RUN apk add --update curl && \
-  apk add --update bash && \
+RUN apk add --update curl openssl bash && \
   rm -rf /var/cache/apk/*
 
 COPY ./docker-entrypoint.sh /
