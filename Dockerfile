@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV REFRESHED_AT 2020-01-30
+ENV REFRESHED_AT 2024-04-15
 
 RUN apk add --update curl openssl bash && \
   rm -rf /var/cache/apk/*
